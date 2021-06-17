@@ -1,0 +1,71 @@
+body{
+    background-color:Aqua; 
+ }
+ h2{
+     text-align: center;
+     color: black;
+     font-family: cursive;
+
+     padding-top: 5px;
+     padding-bottom: 5px;
+
+ }
+table{
+    text-align: center;
+    border: 1px;
+    margin-left: 40%;
+     margin-right: 40%;
+ }
+td{
+    text-align: center;
+}
+input[type="submit"]
+		{
+		background-color: LightBlue;
+		color: black;
+		border: solid black 1px;
+		width:100%
+		}
+
+ #a{
+     text-decoration: none;
+     width: 600px;
+     height: 30px;
+     color: black;
+     font-family: calibri;
+     font-size: 30px;
+     border-radius: 20px;
+     text-align: center;
+     margin-top: 1px;
+     margin-left: 40px;
+     padding-top: 1px;
+     transition: transform 0.2s;
+ }
+
+#add:hover{
+    background-color: white;
+}
+#sub:hover{
+    background-color: white;
+}
+#mul:hover{
+    background-color: white;
+}
+#div:hover{
+    background-color: white;
+}
+#pow:hover{
+    background-color: white;
+}
+#mod:hover{
+    background-color: white;
+}
+#square:hover{
+    background-color: white;
+}
+#root:hover{
+    background-color: white;
+}
+#fact:hover{
+    background-color: white;
+}
