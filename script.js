@@ -1,4 +1,4 @@
-<script type="text/javascript">
+
 		function add(){
 			var a=parseInt(document.getElementById("number1").value);
 			var b=parseInt(document.getElementById("number2").value);
@@ -117,4 +117,4 @@ function openTab(tabName) {
   }
   document.getElementById(tabName).style.display = "block";
 }
-	</script>
+
