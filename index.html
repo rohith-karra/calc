@@ -1,0 +1,188 @@
+<!doctype HTML>
+<HTML>
+<head>
+	<title>Calculator</title>
+              <link href="C:/Users/ROHITH/Desktop/pro/bootstrap3/css/bootstrap.css" rel="stylesheet" />
+	<link href="C:/Users/ROHITH/Desktop/pro/assets/css/gsdk.css" rel="stylesheet" />
+             <link href="C:/Users/ROHITH/Desktop/pro/assets/css/demo.css" rel="stylesheet" />
+          <link href="C:/Users/ROHITH/Desktop/pro/maincss.css" rel="stylesheet" />
+
+    <!--     Font Awesome     -->
+    <link href="C:/Users/ROHITH/Desktop/pro/bootstrap3/css/font-awesome.css" rel="stylesheet" />
+	<script type="text/javascript">
+		function add(){
+			var a=parseInt(document.getElementById("number1").value);
+			var b=parseInt(document.getElementById("number2").value);
+			var x=a+b;
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function sub(){
+			var a=parseInt(document.getElementById("number1").value);
+			var b=parseInt(document.getElementById("number2").value);
+			var x=a-b;
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function mul(){
+			var a=parseInt(document.getElementById("number1").value);
+			var b=parseInt(document.getElementById("number2").value);
+			var x=a*b;
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function div(){
+			var a=parseInt(document.getElementById("number1").value);
+			var b=parseInt(document.getElementById("number2").value);
+			var x=a/b;
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function mod(){
+			var a=parseInt(document.getElementById("number1").value);
+			var b=parseInt(document.getElementById("number2").value);
+			var x=a%b;
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function pow(){
+			var a=parseInt(document.getElementById("number1").value);
+			var b=parseInt(document.getElementById("number2").value);
+			var x=Math.pow(a,b);
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function pow1(){
+			var a=parseInt(document.getElementById("number1").value);
+			var x=Math.pow(a,a);
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function sqrt(){
+			var a=parseInt(document.getElementById("number1").value);
+			var x=Math.sqrt(a);
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function fact(){
+			var a=parseInt(document.getElementById("number1").value);
+			var x=1;
+			if (a == 0 || a == 1){
+				 x=1;
+			}else{
+				for(var i = a; i >= 1; i--){
+					x = x * i;
+				}
+			}  
+		
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function sin(){
+			var a=document.getElementById("number1").value;
+			var y= a*(Math.PI/180);
+			var x=Math.sin(y);
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function asin(){
+			var a=document.getElementById("number1").value;
+			var x=Math.asin(a);
+			var y= (x*(180/Math.PI)).toFixed(2);
+			document.getElementById("result").innerHTML=y;
+			return false;
+		}
+		function cos(){
+			var a=document.getElementById("number1").value;
+			var y= a*(Math.PI/180);
+			var x=Math.cos(y);
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function acos(){
+			var a=document.getElementById("number1").value;
+			var x=Math.acos(a);
+			var y= (x*(180/Math.PI)).toFixed(2);
+			document.getElementById("result").innerHTML=y;
+			return false;
+		}
+		function tan(){
+			var a=document.getElementById("number1").value;
+			var y= a*(Math.PI/180);
+			var x=Math.tan(y);
+			document.getElementById("result").innerHTML=x;
+			return false;
+		}
+		function atan(){
+			var a=document.getElementById("number1").value;
+			var x=Math.atan(a);
+			var y= (x*(180/Math.PI)).toFixed(2);
+			document.getElementById("result").innerHTML=y;
+			return false;
+		}
+function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+	</script>
+</head>
+<body>
+	<h2>Calculator</h2>
+	<table>
+		<tr>
+			<td>Number 1:</td>
+			<td><input type="text" title="x" placeholder="Enter a number" id="number1" required="required">
+			</td>
+		</tr><br>
+		<tr>
+			<td>Number 2:</td>
+			<td><input type="text" title="y" placeholder="Enter a number" id="number2">
+			</td>
+		</tr><br>
+		<tr>
+			<td>Result:</td> 
+			<td><textarea id="result" rows="2" cols="20"></textarea>
+		</tr>
+	</table>
+	<table>
+    	<tr>
+    		<td id="a"><input type="submit" id="add" title="addition" value="+" onclick="add()" /></td>
+    		<td id="a"><input type="submit" id="sub" title="subtraction" value="-" onclick="sub()"/></td>
+    		<td id="a"><input type="submit" id="mul" title="multiplication" value="*" onclick="mul()"/></td>
+    	</tr>
+    	<tr>
+    		<td id="a"><input type="submit" id="div" title="division" value="/" onclick="div()"/></td>
+    		<td id="a"><input type="submit" id="mod" title="modulo division" value="%" onclick="mod()"/></td>
+    		<td id="a"><input type="submit" id="pow" title="x power y" value="x^y" onclick="pow()"/></td>
+    	</tr>
+    	<tr>
+    		<td id="a"><input type="submit" id="square" title="x square" value="x^2" onclick="pow1()"/></td>
+    		<td id="a"><input type="submit" id="root" title="Squareroot of x" value="sqrt(x)" onclick="sqrt()"/></td>
+    		<td id="a"><input type="submit" id="fact" value="x!" title="Factorial of x" onclick="fact()"/></td>
+    	</tr>
+    </table>
+    <table><tr>
+  <div class="row">
+  	<td><div class="column" onclick="openTab('b1');" style="background:aqua;">Trignometric</div></td>
+  </div></tr>
+ <tr><td>
+    	<div id="b1" class="containerTab" style="display:none;background:green">
+    		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
+    		<input type="submit" id="sin" title="sin of x" value="sin(x)" onclick="sin()"/>
+    	    <input type="submit" id="asin" title="sin inverse of x" value="asin(x)" onclick="asin()"/>
+    	    <input type="submit" id="cos" title="cos of x" value="cos(x)" onclick="cos()"/>
+    	    
+    		<input type="submit" id="acos" title="cos inverse of x" value="acos(x)" onclick="acos()"/>
+    	    <input type="submit" id="tan" title="tan of x" value="tan(x)" onclick="tan()"/>
+    		<input type="submit" id="atan" title="tan inverse of x" value="atan(x)" onclick="atan()"/>
+        </div>
+  </td></tr>
+  </table>
+
+
+</body>
+</HTML>
