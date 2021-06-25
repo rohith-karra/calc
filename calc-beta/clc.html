@@ -1,0 +1,44 @@
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="script1.js"></script>
+    <link href="maincss1.css" rel="stylesheet" />
+    <link rel="icon" href="1.png" type="image/png">
+</head>
+<body>
+	<h2> Calculator</h2>
+	<table align="center">
+		<tr>
+			<td colspan="3"><input type="text" id="result"/></td>
+			<td><input type="button" id="b" value="c" onclick="clr()"/> </td>
+		</tr>
+		<tr>
+			<td ><input type="button" id="a" value="1" onclick="add('1')"/> </td>
+			<td><input type="button" id="a" value="2" onclick="add('2')"/> </td>
+			<td><input type="button" id="a" value="3" onclick="add('3')"/> </td>
+			<td><input type="button" id="b" value="/" onclick="add('/')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" id="a" value="4" onclick="add('4')"/> </td>
+			<td><input type="button" id="a" value="5" onclick="add('5')"/> </td>
+			<td ><input type="button" id="a" value="6" onclick="add('6')"/> </td>
+			<td><input type="button" id="b" value="-" onclick="add('-')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" id="a" value="7" onclick="add('7')"/> </td>
+			<td><input type="button" id="a" value="8" onclick="add('8')"/> </td>
+			<td><input type="button" id="a" value="9" onclick="add('9')"/> </td>
+			<td><input type="button" id="b" value="+" onclick="add('+')"/> </td>
+		</tr>
+		<tr>
+			<td><input type="button" id="a" value="." onclick="add('.')"/> </td>
+			<td><input type="button" id="a" value="0" onclick="add('0')"/> </td>
+			<td><input type="button" id="b" value="=" onclick="solve()"/> </td>
+			<td><input type="button" id="b" value="*" onclick="add('*')"/> </td>
+		</tr>
+	</table>
+</body>
+</html>
