@@ -6,9 +6,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calculator</title>
 	<link rel="icon" href="calc.ico" type="image/x-icon">
-        <link href="bootstrap3/css/bootstrap.css" rel="stylesheet" />
-	<link href="assets/css/gsdk.css" rel="stylesheet" />
-        <link href="assets/css/demo.css" rel="stylesheet" />
         <link href="maincss.css" rel="stylesheet" />
 
     <!--     Font Awesome     -->
@@ -17,61 +14,29 @@
 </head>
 <body>
 	<h2>Calculator</h2>
-	<table id="tab1" align="center">
-		<tr>
-			<td>Number 1:</td>
-			<td><input type="text" title="x" placeholder="Enter a number" id="number1" required="required">
-			</td>
-		</tr><br>
-		<tr>
-			<td>Number 2:</td>
-			<td><input type="text" title="y" placeholder="Enter a number" id="number2">
-			</td>
-		</tr><br>
-		<tr>
-			<td>Result:</td> 
-			<td><textarea id="result" rows="2" cols="22"></textarea></td>
-		</tr>
-	</table>
-	<table id="tab2" align="center">
-    	<tr>
-    		<td id="a"><input type="submit" id="add" title="addition" value="+" onclick="add()" /></td>
-    		<td id="a"><input type="submit" id="sub" title="subtraction" value="-" onclick="sub()"/></td>
-    		<td id="a"><input type="submit" id="mul" title="multiplication" value="*" onclick="mul()"/></td>
-    	</tr>
-    	<tr>
-    		<td id="a"><input type="submit" id="div" title="division" value="/" onclick="div()"/></td>
-    		<td id="a"><input type="submit" id="mod" title="modulo division" value="%" onclick="mod()"/></td>
-    		<td id="a"><input type="submit" id="pow" title="x power y" value="x^y" onclick="pow()"/></td>
-    	</tr>
-    	<tr>
-    		<td id="a"><input type="submit" id="square" title="x square" value="x^2" onclick="pow1()"/></td>
-    		<td id="a"><input type="submit" id="root" title="Squareroot of x" value="sqrt(x)" onclick="sqrt()"/></td>
-    		<td id="a"><input type="submit" id="fact" value="x!" title="Factorial of x" onclick="fact()"/></td>
-    	</tr>
-    </table>
-    <table id="tab3" align="center">
-   <tr>
-  <div class="row">
-  	<td><div class="column" onclick="openTab('b1');" style="background:aqua;">Trignometric</div></td>
-  </div>
-</tr>
- <tr>
-  <td>
-    	<div id="b1" class="containerTab" style="display:none;background:green">
-    		<span onclick="this.parentElement.style.display='none'" class="closebtn">x</span>
-    		<input type="submit" id="sin" title="sin of x" value="sin(x)" onclick="sin()"/>
-    	    <input type="submit" id="asin" title="sin inverse of x" value="asin(x)" onclick="asin()"/>
-    	    <input type="submit" id="cos" title="cos of x" value="cos(x)" onclick="cos()"/>
-    	    
-    		<input type="submit" id="acos" title="cos inverse of x" value="acos(x)" onclick="acos()"/>
-    	    <input type="submit" id="tan" title="tan of x" value="tan(x)" onclick="tan()"/>
-    		<input type="submit" id="atan" title="tan inverse of x" value="atan(x)" onclick="atan()"/>
-        </div>
-  </td>
-</tr>
-  </table>
-
+	   <table align="center">
+        <tr>
+            <td colspan="3"><input type="text" colspan="3" placeholder="Enter a number" id="number1" size="22" required="required"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" colspan="3" placeholder="Enter a number" id="number2" size="22" ></td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="a" title="x power y" value="x^y" onclick="pow()"/></td>
+            <td><input type="submit" id="a" title="Squareroot of x" value="sqrt(x)" onclick="sqrt()"/></td>
+            <td><input type="submit" id="a" value="x!" title="Factorial of x" onclick="fact()"/></td>
+        </tr>
+        <tr>
+            <td ><input type="submit" id="a" title="sin of x" value="sin(x)" onclick="sin()"/> </td>
+            <td><input type="submit" id="a" title="sin inverse of x" value="asin(x)" onclick="asin()"/></td>
+            <td><input type="submit" id="a" title="cos of x" value="cos(x)" onclick="cos()"/></td>
+            
+        </tr>
+        <tr>
+            <td><input type="submit" id="a" title="cos inverse of x" value="acos(x)" onclick="acos()"/></td>
+            <td><input type="submit" id="a" title="tan of x" value="tan(x)" onclick="tan()"/></td>
+            <td ><input type="submit" id="a" title="tan inverse of x" value="atan(x)" onclick="atan()"/></td>
+        </tr>
 
 </body>
 </HTML>
