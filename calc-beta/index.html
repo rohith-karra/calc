@@ -12,32 +12,39 @@
 	<h2> Calculator</h2>
 	<table align="center">
 		<tr>
-			<td colspan="3"><input type="text" id="result"/></td>
+			<td colspan="4"><input type="text" id="result" size="28" /></td>
+		</tr>
+		<tr>
 			<td><input type="button" id="b" value="c" onclick="clr()"/> </td>
+			<td><input type="button" id="b" value="<<" onclick="back()"/> </td>
+			<td><input type="button" id="b" value="%" onclick="add('%')"/> </td>
+			<td><input type="button" id="b" value="/" onclick="add('/')"/> </td>
 		</tr>
 		<tr>
 			<td ><input type="button" id="a" value="1" onclick="add('1')"/> </td>
 			<td><input type="button" id="a" value="2" onclick="add('2')"/> </td>
 			<td><input type="button" id="a" value="3" onclick="add('3')"/> </td>
-			<td><input type="button" id="b" value="/" onclick="add('/')"/> </td>
+			<td><input type="button" id="b" value="x" onclick="add('*')"/> </td>
+			
 		</tr>
 		<tr>
 			<td><input type="button" id="a" value="4" onclick="add('4')"/> </td>
 			<td><input type="button" id="a" value="5" onclick="add('5')"/> </td>
 			<td ><input type="button" id="a" value="6" onclick="add('6')"/> </td>
-			<td><input type="button" id="b" value="-" onclick="add('-')"/> </td>
+			<td><input type="button" id="b" value="+" onclick="add('+')"/> </td>
 		</tr>
 		<tr>
 			<td><input type="button" id="a" value="7" onclick="add('7')"/> </td>
 			<td><input type="button" id="a" value="8" onclick="add('8')"/> </td>
 			<td><input type="button" id="a" value="9" onclick="add('9')"/> </td>
-			<td><input type="button" id="b" value="+" onclick="add('+')"/> </td>
+			<td><input type="button" id="b" value="-" onclick="add('-')"/> </td>
 		</tr>
 		<tr>
-			<td><input type="button" id="a" value="." onclick="add('.')"/> </td>
+			<td><input type="button" id="a1" value="." onclick="add('.')"/> </td>
 			<td><input type="button" id="a" value="0" onclick="add('0')"/> </td>
-			<td><input type="button" id="b" value="=" onclick="solve()"/> </td>
-			<td><input type="button" id="b" value="*" onclick="add('*')"/> </td>
+			<td><button id="b" onclick="document.location='https://rohith-karra.github.io/calc/'">>></button></td>
+			<td><input type="button" id="b1" value="=" onclick="solve()"/> </td>
+			
 		</tr>
 	</table>
 </body>
