@@ -7,22 +7,22 @@
 			return false;
 		}
 		function sub(){
-			var a=parseInt(document.getElementById("number1").value);
-			var b=parseInt(document.getElementById("number2").value);
+			var a=document.getElementById("number1").value;
+			var b=document.getElementById("number2").value;
 			var x=a-b;
 			document.getElementById("result").innerHTML=x;
 			return false;
 		}
 		function mul(){
-			var a=parseInt(document.getElementById("number1").value);
-			var b=parseInt(document.getElementById("number2").value);
+			var a=document.getElementById("number1").value;
+			var b=document.getElementById("number2").value;
 			var x=a*b;
 			document.getElementById("result").innerHTML=x;
 			return false;
 		}
 		function div(){
-			var a=parseInt(document.getElementById("number1").value);
-			var b=parseInt(document.getElementById("number2").value);
+			var a=document.getElementById("number1").value;
+			var b=document.getElementById("number2").value;
 			var x=a/b;
 			document.getElementById("result").innerHTML=x;
 			return false;
