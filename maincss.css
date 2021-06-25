@@ -5,60 +5,24 @@ body{
      text-align: center;
      color: black;
      font-family: cursive;
-
      padding-top: 5px;
      padding-bottom: 5px;
 
  }
-#tab3{
-text-align:center;
-}
- 	
-input[type="submit"]
-		{
-		background-color: LightBlue;
-		color: black;
-		border: solid black 1px;
-		width:100%
-		}
+ 	table{
+            border: 1px solid;
+        }
 
  #a{
-     text-decoration: none;
-     height: 30px;
-     color: black;
-     font-family: calibri;
-     font-size: 30px;
-     border-radius: 20px;
-     text-align: center;
-     margin-top: 1px;
-     padding-top: 1px;
-     transition: transform 0.2s;
+            background-color:#aec0d3;
+            color: black;
+            border:1.5px solid #a2bbd4;
+            height:50px;
+            width:60px;
+            border-radius: 3px;
+            padding: 5px 0px;
  }
 
-#add:hover{
-    background-color: white;
-}
-#sub:hover{
-    background-color: white;
-}
-#mul:hover{
-    background-color: white;
-}
-#div:hover{
-    background-color: white;
-}
-#pow:hover{
-    background-color: white;
-}
-#mod:hover{
-    background-color: white;
-}
-#square:hover{
-    background-color: white;
-}
-#root:hover{
-    background-color: white;
-}
-#fact:hover{
+#a:hover{
     background-color: white;
 }
