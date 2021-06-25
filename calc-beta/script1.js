@@ -13,6 +13,6 @@ function clr()
 		{
 			document.getElementById("result").value = "";
 		}
-		function back(){
+function back(){
 			document.getElementById("result").value=document.getElementById("result").value.slice(0,-1);
 		}
