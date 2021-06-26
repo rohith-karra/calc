@@ -67,3 +67,14 @@
 			document.getElementById("number2").value=y;
 			return false;
 		}
+              function log(){
+	              var a=document.getElementById("number1").value;
+		      var x=Math.log(a);
+		      document.getElementById("result").value=x;
+	      }
+             function exp(){
+	              var a=document.getElementById("number1").value;
+		      var x=2.71828183;
+		      var y=Math.pow(x,a);
+		      document.getElementById("result").value=y;
+	      }
