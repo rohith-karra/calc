@@ -74,9 +74,8 @@
 	      }
              function exp(){
 	              var a=document.getElementById("number1").value;
-		      var x=2.71828183;
-		      var y=Math.pow(x,a);
-		      document.getElementById("number2").value=y;
+		      var x=Math.exp(a);
+		      document.getElementById("number2").value=x;
 	      }
             function ln(){
 	              var a=document.getElementById("number1").value;
