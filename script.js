@@ -69,7 +69,7 @@
 		}
               function log(){
 	              var a=document.getElementById("number1").value;
-		      var x=Math.log(a);
+		      var x=Math.log10(a);
 		      document.getElementById("number2").value=x;
 	      }
              function exp(){
@@ -77,4 +77,9 @@
 		      var x=2.71828183;
 		      var y=Math.pow(x,a);
 		      document.getElementById("number2").value=y;
+	      }
+            function ln(){
+	              var a=document.getElementById("number1").value;
+		      var x=Math.log(a);
+		      document.getElementById("number2").value=x;
 	      }
