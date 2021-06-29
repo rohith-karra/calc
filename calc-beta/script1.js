@@ -16,7 +16,3 @@ function clr()
 function back(){
 			document.getElementById("result").value=document.getElementById("result").value.slice(0,-1);
 		}
-function play(){
-	var x = document.getElementById("aud");
-	x.play();
-}
