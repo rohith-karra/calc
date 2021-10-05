@@ -1,16 +1,105 @@
+<!DOCTYPE html>
 <html>
 <head>
-	
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Calc+</title>
-	<script type="text/javascript" src="script1.js"></script>
-    <link href="maincss1.css" rel="stylesheet" />
-    <link rel="icon" href="1.png" type="image/png">
+<meta charset="ISO-8859-1">
+<title>Calculator</title>
+
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	crossorigin="anonymous">
+
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="script1.js"></script>
+<link rel="icon" href="1.png" type="image/png">
+
 </head>
-<body>
-	<h2> Calculator</h2>
+<style>
+  
+     h2{
+        margin-bottom: 10px;
+        text-align:center;
+        color:Black;
+        }
+        table{
+             background-color: white;
+            border: 1px solid;
+        }
+        #a{
+            background-color:#E5ECF3;
+            color: black;
+            border:1.5px solid #a2bbd4;
+            height:40px;
+            width:55px;
+            border-radius: 3px;
+            display: inline-block;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 5px 0px;
+
+        }
+        #a1{
+            background-color:#E5ECF3;
+            color: black;
+            border:1.5px solid #a2bbd4;
+            height:40px;
+            width:55px;
+            border-radius: 3px;
+            display: inline-block;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 5px 0px;
+            font-weight: bold;
+
+        }
+        #b{
+            background-color:#aec0d3;
+           border:1px solid #a2bbd4;
+            height:40px;
+            width:55px;
+            border-radius: 3px;
+            display: inline-block;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 5px 0px;
+        }
+         #b1{
+            background-color:#416891;
+           border:1px solid #a2bbd4;
+            height:40px;
+            width:55px;
+            color: white;
+            border-radius: 3px;
+            display: inline-block;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 5px 0px;
+        }
+        }
+
+        input[type="text"]
+        {
+        background-color:white;
+        border: solid black 2px;
+        width: 100%;
+        }
+
+</style>
+<body
+	style="background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
+<div class="container">
+		<div class="row mt-3">
+			<div class="col-md-4 offset-md-4">
+				<div class="card">
+					<div class="card-header text-center bg-info text-white">
+					
+						<h5>Calculator</h5>
+					</div>
+					<div class="card-body">
+	
 	<table align="center">
 		<tr>
 			<td colspan="4"><input type="text" id="result" size="28" /></td>
@@ -48,5 +137,10 @@
 			
 		</tr>
 	</table>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
