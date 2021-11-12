@@ -88,9 +88,39 @@
         border: solid black 2px;
         width: 100%;
         }
+	 .header {
+            overflow: hidden;
+             background-color: #02ac5f;
+            padding: 20px 10px;
+        }
+        .header a {
+            float: left;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
+            }
+            .header a.logo {
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .header-right {
+                float: right;
+            }
 
 </style>
 <body
+      <div class="header">
+            <a href="#default" class="logo">WordWizard</a>
+            <div class="header-right">
+                <a class="active" href="https://rohith-karra.github.io/randomwords/">Home</a>
+                <a href="https://rohith-karra.github.io/calc/calc-beta/">Calc+</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
 	style="background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
 <div class="container">
 		<div class="row mt-3">
