@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <head><title>Currency</title>
+    <style>
+  
+
+  #a{
+            background-color:#aec0d3;
+            color: black;
+            border:1.5px solid #a2bbd4;
+            height:50px;
+            width:65px;
+            border-radius: 3px;
+            padding: 5px 0px;
+ }
+
+   
+
+
+</style>
+
+    </style>
     <script type="text/javascript" src="currency.js"></script>
 </head>
 <body>
-    <input type="text" id="curr" name="curr"></br>
-    <input type="button" value="pound" onclick="convo()">
-    <input type="button" value="US Dollar" onclick="convo1()">
-    <input type="button" value="AUS Dollar" onclick="convo2()"></br>
-    <input type="text" id="res" name="res">
+    <table align="center">
+        <br><br>
+        <tr>
+            <td colspan="3"><input type="text" colspan="3" placeholder="Enter a number" id="curr" size="30" required="required"></td>
+        </tr>
+
+    <tr>
+    <td><input type="button" id="a" value="pound" onclick="convo()"></td>
+    <td><input type="button" id="a" value="US Dollar" onclick="convo1()"></td>
+    <td><input type="button" id="a" value="AUS Dollar" onclick="convo2()"></td>
+    </tr>
+
+    <tr>
+        <td colspan="3"><input type="text" id="res" size="30" required="required"></td>
+    </tr>
+
+    </table>
 </body>
 </html>
