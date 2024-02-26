@@ -3,9 +3,15 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Calculator</title>
+
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<link rel="icon" href="calc.ico" type="image/x-icon">
+        <link href="maincss.css" rel="stylesheet" />
+	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
 	integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -14,80 +20,37 @@
 	<link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="script1.js"></script>
-<link rel="icon" href="1.png" type="image/png">
-
 </head>
 <style>
   
-     h2{
-        margin-bottom: 10px;
-        text-align:center;
-        color:Black;
-        }
-        table{
-             background-color: white;
+    body{
+    background-color:Aqua; 
+ }
+ h2{
+     text-align: center;
+     color: black;
+     font-family: cursive;
+     padding-top: 5px;
+     padding-bottom: 5px;
+
+ }
+ 	table{
             border: 1px solid;
         }
-        #a{
-            background-color:#E5ECF3;
-            color: black;
-            border:1.5px solid #a2bbd4;
-            height:40px;
-            width:55px;
-            border-radius: 3px;
-            display: inline-block;
-            display: table-cell;
-            vertical-align: middle;
-            padding: 5px 0px;
 
-        }
-        #a1{
-            background-color:#E5ECF3;
-            color: black;
-            border:1.5px solid #a2bbd4;
-            height:40px;
-            width:55px;
-            border-radius: 3px;
-            display: inline-block;
-            display: table-cell;
-            vertical-align: middle;
-            padding: 5px 0px;
-            font-weight: bold;
-
-        }
-        #b{
+ #a{
             background-color:#aec0d3;
-           border:1px solid #a2bbd4;
-            height:40px;
-            width:55px;
+            color: black;
+            border:1.5px solid #a2bbd4;
+            height:50px;
+            width:60px;
             border-radius: 3px;
-            display: inline-block;
-            display: table-cell;
-            vertical-align: middle;
             padding: 5px 0px;
-        }
-         #b1{
-            background-color:#416891;
-           border:1px solid #a2bbd4;
-            height:40px;
-            width:55px;
-            color: white;
-            border-radius: 3px;
-            display: inline-block;
-            display: table-cell;
-            vertical-align: middle;
-            padding: 5px 0px;
-        }
-        }
+ }
 
-        input[type="text"]
-        {
-        background-color:white;
-        border: solid black 2px;
-        width: 100%;
-        }
+#a:hover{
+    background-color: white;
+}
 	 .header {
             overflow: hidden;
              background-color: #17a2b8;
@@ -114,11 +77,11 @@
 </style>
 <body style="background: linear-gradient(125deg, #ECFCFF 0%, #ECFCFF 40%, #B2FCFF calc(40% + 1px), #B2FCFF 60%, #5EDFFF calc(60% + 1px), #5EDFFF 72%, #3E64FF calc(72% + 1px), #3E64FF 100%); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
 <div class="header">
-            <a href="#default" class="logo">Calc+</a>
+            <a href="#default" class="logo">Home</a>
             <div class="header-right">
-                <a class="active" href="https://word-wizard.herokuapp.com/">Home</a>
-                <a href="https://rohith-karra.github.io/calc/calc-beta/">Calc+</a>
-                <a href="https://rohith-karra.github.io/calc/convo/">Curr</a>
+                <a class="active" href="https://rohith-karra.github.io/calc/calc-beta/">Home</a>
+                <a href="https://rohith-karra.github.io/calc/">Calc+</a>
+                <a href="https://rohith-karra.github.io/calc/convo/">Health</a>
             </div>
         </div>
 	<div class="container">
@@ -131,43 +94,42 @@
 					</div>
 					<div class="card-body">
 	
-	<table align="center">
+ <table align="center">
+        <tr>
+            <td colspan="3"><input type="text" colspan="3" placeholder="Enter a number" id="number1" size="22" required="required"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><input type="text" colspan="3" placeholder="Enter a number" id="number2" size="22" ></td>
+        </tr>
+        <tr>
+            <td><input type="submit" id="a" title="x power y" value="x^y" onclick="pow()"/></td>
+            <td><input type="submit" id="a" title="Squareroot of x" value="sqrt(x)" onclick="sqrt()"/></td>
+            <td><input type="submit" id="a" value="x!" title="Factorial of x" onclick="fact()"/></td>
+        </tr>
 		<tr>
-			<td colspan="4"><input type="text" id="result" size="28" /></td>
-		</tr>
-		<tr>
-			<td><input type="button" id="b" value="c" onclick="clr()"/> </td>
-			<td><input type="button" id="b" value="<<" onclick="back()"/> </td>
-			<td><input type="button" id="b" value="%" onclick="add('%')"/> </td>
-			<td><input type="button" id="b" value="/" onclick="add('/')"/> </td>
-		</tr>
-		<tr>
-			<td ><input type="button" id="a" value="1" onclick="add('1')"/> </td>
-			<td><input type="button" id="a" value="2" onclick="add('2')"/> </td>
-			<td><input type="button" id="a" value="3" onclick="add('3')"/> </td>
-			<td><input type="button" id="b" value="x" onclick="add('*')"/> </td>
-			
-		</tr>
-		<tr>
-			<td><input type="button" id="a" value="4" onclick="add('4')"/> </td>
-			<td><input type="button" id="a" value="5" onclick="add('5')"/> </td>
-			<td ><input type="button" id="a" value="6" onclick="add('6')"/> </td>
-			<td><input type="button" id="b" value="+" onclick="add('+')"/> </td>
-		</tr>
-		<tr>
-			<td><input type="button" id="a" value="7" onclick="add('7')"/> </td>
-			<td><input type="button" id="a" value="8" onclick="add('8')"/> </td>
-			<td><input type="button" id="a" value="9" onclick="add('9')"/> </td>
-			<td><input type="button" id="b" value="-" onclick="add('-')"/> </td>
-		</tr>
-		<tr>
-			<td><input type="button" id="a1" value="." onclick="add('.')"/> </td>
-			<td><input type="button" id="a" value="0" onclick="add('0')"/> </td>
-			<td><button id="b" onclick="document.location='https://rohith-karra.github.io/calc/'">>></button></td>
-			<td><input type="button" id="b1" value="=" onclick="solve()"/> </td>
-			
-		</tr>
-	</table>
+
+            <td ><input type="submit" id="a" title="log(x)" value="log(x)" onclick="log()"/> </td>
+
+            <td><input type="submit" id="a" title="e^x" value="e^x" onclick="exp()"/></td>
+
+            <td><input type="submit" id="a" title="ln(x)" value="ln(x)" onclick="ln()"/></td>
+
+            
+
+        </tr>
+        <tr>
+            <td ><input type="submit" id="a" title="sin of x" value="sin(x)" onclick="sin()"/> </td>
+            <td><input type="submit" id="a" title="sin inverse of x" value="asin(x)" onclick="asin()"/></td>
+            <td><input type="submit" id="a" title="cos of x" value="cos(x)" onclick="cos()"/></td>
+            
+        </tr>
+        <tr>
+            <td><input type="submit" id="a" title="cos inverse of x" value="acos(x)" onclick="acos()"/></td>
+            <td><input type="submit" id="a" title="tan of x" value="tan(x)" onclick="tan()"/></td>
+            <td ><input type="submit" id="a" title="tan inverse of x" value="atan(x)" onclick="atan()"/></td>
+        </tr>
+</table>
+
 </div>
 				</div>
 			</div>
