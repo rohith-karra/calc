@@ -5,15 +5,19 @@ function convo(){
  var c=(a/Math.pow(d,2)).toFixed(1);
  document.getElementById("res").value=c;
  if(c<18.5){
-    document.getElementById("status").value="Under Weight";
+    var str="UnderWeight";
+    document.getElementById("status").value=str;
  }
  else if(c>18.5 && c<24.9){
-    document.getElementById("status").value="Healthy keep it up";
+    var str="Healthy Keep it up"
+    document.getElementById("status").value=str;
  }
  else if(c>25 && c<29.9){
-    document.getElementById("status").value="Over Weight";
+    var str="OverWeight"
+    document.getElementById("status").value=str;
  }
  else{
-    document.getElementById("status").value="OMG Obese!! Please hit the Gym";
+    var str="OMG Obese!! Please hit the Gym"
+    document.getElementById("status").value=str;
  }
 }
